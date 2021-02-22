@@ -60,7 +60,7 @@ add_cron() {
 # Run Script
 
 notify() {
-    grep "Cookie失效" ${LOG_FILE} >/dev/null
+    grep "】:  Cookie失效" ${LOG_FILE} >/dev/null
     if [ $? -eq 0 ]; then
         title="$(date '+%Y年%m月%d日') 京东签到 Cookie 失效"
     else
