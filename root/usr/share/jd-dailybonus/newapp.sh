@@ -87,7 +87,7 @@ notify() {
         
 \`\`\`
 "$desc"
-====================================
+===============================
 本消息来自京东签到插件 jd-dailybonus
 \`\`\`"
         wget-ssl -q --output-document=/dev/null --post-data="chat_id=$TG_USER_ID&text=$text&parse_mode=markdownv2" $API_URL
